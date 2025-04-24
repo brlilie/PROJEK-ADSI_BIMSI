@@ -1,0 +1,93 @@
+timestamp, email, judul, dosen, progress, tipe_bimbingan, offline_date, pesan, link
+"2025-04-23 16:36:24",ratubrliana@gmail.com,"Penyusunan Kerangka Pemikiran dan Hipotesis pada Bab 1","Anindita Tri Mulia",,online,,,
+"2025-04-23 16:36:30",ratubrliana@gmail.com,"Penyusunan Kerangka Pemikiran dan Hipotesis pada Bab 1","Anindita Tri Mulia",,online,,,
+"2025-04-23 16:37:06",ratubrliana@gmail.com,"Penyusunan Kerangka Pemikiran dan Hipotesis pada Bab 1","Anindita Tri Mulia",,online,,,
+"2025-04-23 16:38:45",ratubrliana@gmail.com,"Penyusunan Kerangka Pemikiran dan Hipotesis pada Bab 1","Anindita Tri Mulia",,online,,,
+"2025-04-23 16:39:04",ratubrliana@gmail.com,"Penyusunan Kerangka Pemikiran dan Hipotesis pada Bab 1","Didik Kurniawan",,offline,2025-04-09,haloo,"<?php
+session_start();
+if (!isset($_SESSION['email'])) {
+    header(""Location: /bimsi/index.php"");
+    exit();
+}
+
+// Load bimbingan submissions from CSV
+$dataFile = 'bimbingan_data.csv';
+$bimbinganData = [];
+
+if (file_exists($dataFile)) {
+    $file = fopen($dataFile, 'r');
+    while (($row = fgetcsv($file)) !== FALSE) {
+        $bimbinganData[] = $row;
+    }
+    fclose($file);
+}
+?>
+
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <title>Activity Log</title>
+  <link href=""https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"" rel=""stylesheet"">
+  <style>
+    .activity-card {
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .status-badge {
+        padding: 5px 15px;
+        border-radius: 10px;
+        font-size: 0.875rem;
+    }
+    .badge-validated {
+        background-color: #6c8efb;
+        color: white;
+    }
+    .badge-passed {
+        background-color: #aef6b5;
+        color: black;
+    }
+    .badge-revision {
+        background-color: #f8b0b0;
+        color: black;
+    }
+  </style>
+</head>
+<body class=""container py-5"">
+  <h2 class=""mb-4"">Riwayat Bimbingan</h2>
+
+  <?php foreach (array_reverse($bimbinganData) as $entry): ?>
+    <?php
+      list($judul, $progress, $tipe, $pesan, $link, $dosen, $date, $status) = $entry;
+    ?>
+    <div class=""activity-card"">
+      <div>
+        <div class=""text-muted small"">Date<br><?= htmlspecialchars($date) ?></div>
+      </div>
+      <div style=""flex: 1; margin-left: 15px;"">
+        <div class=""fw-semibold""><?= htmlspecialchars($judul) ?></div>
+        <div class=""small text-muted""><?= htmlspecialchars(ucfirst($tipe)) ?></div>
+        <span class=""btn btn-sm btn-outline-dark mt-1""><?= htmlspecialchars($progress) ?></span>
+      </div>
+      <div class=""text-end"">
+        <div class=""status-badge badge-validated"">Telah di Validasi</div>
+        <div class=""status-badge mt-2 <?= $status === 'Lolos' ? 'badge-passed' : 'badge-revision' ?>"">
+          <?= htmlspecialchars($status) ?>
+        </div>
+      </div>
+    </div>
+  <?php endforeach; ?>
+
+</body>
+</html>
+"
+"2025-04-23 16:40:51",ratubrliana@gmail.com,"Penyusunan Kerangka Pemikiran dan Hipotesis pada Bab 1","Anindita Tri Mulia","Progress 2",online,,iyaaa,"inii yaaa"
+"2025-04-23 17:30:49",ratubrliana@gmail.com,"Penyusunan Kerangka Pemikiran dan Hipotesis pada Bab 1","Didik Kurniawan","Progress 2",offline,2025-04-22,,
+"2025-04-23 18:05:45",ratubrliana@gmail.com,"Penyusunan Kerangka Pemikiran dan Hipotesis pada Bab 1","Anindita Tri Mulia","Progress 1",offline,2025-05-01,"Permisi buuu",vclass.unila.ac.id
+"2025-04-24 04:48:25",ratubrliana@gmail.com,"Penyusunan Kerangka Pemikiran dan Hipotesis pada Bab 1","Anindita Tri Mulia","Progress 1",offline,2025-04-10,yyy,nhhh
