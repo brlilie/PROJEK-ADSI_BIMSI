@@ -33,34 +33,33 @@ F2F5FE bg pemilihan bimbingan dan teks putih (245, 247, 255)
         <div class="card-role">
             <h5 class="judul-login  mb-4" style="font-weight: 600; font-size: 24px;">Kamu masuk sebagai apa?</h5>
             <form id="roleForm">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="role" id="dosen" value="dosen" required>
-                <label class="form-check-label" for="dosen">
-                  Dosen
-                </label>
+              <div class="custom-radio-group">
+                  <input type="radio" name="role" id="dosen" value="dosen" required>
+                  <label for="dosen" class="radio-card">Dosen</label>
+
+                  <input type="radio" name="role" id="mahasiswa" value="mahasiswa">
+                  <label for="mahasiswa" class="radio-card">Mahasiswa</label>
               </div>
-              <div class="form-check mt-2 mb-3">
-                <input class="form-check-input" type="radio" name="role" id="mahasiswa" value="mahasiswa">
-                <label class="form-check-label" for="mahasiswa">
-                  Mahasiswa
-                </label>
-              </div>
-                <button type="submit" class="btn custom-login-btn w-100">Lanjut</button>
+
+
+              <div class="d-flex justify-content-center mt-3">
+                <button class="button">Masuk</button>
+              </div> 
             </form>
           </div>
         </div>
       
-    <script>
-    document.getElementById('roleForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        const selectedRole = document.querySelector('input[name="role"]:checked').value;
-        if (selectedRole === 'mahasiswa') {
-            window.location.href = 'register-mahasiswa.html';
-        } else if (selectedRole === 'dosen') {
-            window.location.href = 'register-dosen.html';
-         }
-        });
-    </script>
+        <script>
+          document.getElementById('roleForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const selectedRole = document.querySelector('input[name="role"]:checked').value;
+            if (selectedRole === 'mahasiswa') {
+              window.location.href = 'Mahasiswa/register-mahasiswa.php';
+            } else if (selectedRole === 'dosen') {
+              window.location.href = 'register-dosen.php';
+            }
+          }); 
+        </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
