@@ -1,0 +1,230 @@
+body {
+    margin:0;
+    padding: 0;
+    background-color: #fff;
+  }
+.card-container {
+    margin: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    gap: 5px;
+    justify-content: start;
+    margin-top: 40px;
+}
+.card {
+    width: 160px;
+    padding: 15px;
+    height: fit-content;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    display: inline-block;
+}
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 8px;
+    border: 2px solid #5c6bc0; /* fixed this line */
+}
+
+
+.card h5{
+margin: 10px 0;
+font-size: 16px;
+}
+.card p {
+    font-size: 14px;
+    margin: 2px 0;
+    color: #444;
+}
+
+
+.card button {
+    background-color:#9CB3F6;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.overlay {
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    z-index: 999;
+}
+.popup {
+  background: #fffbfb;
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  position: relative;
+
+  width: 90%;
+  max-width: 400px;
+  height: fit-content;
+  max-height: 90vh;
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* full width children */
+  text-align: left;
+}
+.popup img {
+    border: 3px solid #1c739b;
+    margin-bottom: 15px;
+    align-self: center;
+    width: 90px; /* or whatever size fits your layout */
+    height: 120px;
+    object-fit: cover; /* crop to fill the box and maintain aspect ratio */
+    border-radius: 50%; /* optional: make it circular like a profile picture */
+    display: block;
+    margin: 0 auto;
+}
+.popup h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+.popup button.close {
+float: right;
+background: transparent;
+border: none;
+font-size: 20px;
+cursor: pointer;
+}
+.popup input[type="file"] {
+display: block;
+margin: 15px 0;
+}
+.popup input[type="checkbox"] {
+margin-right: 10px;
+}
+
+
+.nip-label {
+    font-weight: lighter;
+    margin-bottom: 0;
+  }
+
+  .nip-value {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .select-label {
+    text-align: left;
+    display: block;
+    margin-top: 15px;
+    font-weight: lighter;
+  } 
+
+  .custom-file-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin: 12px 0;
+    background-color: #f9f9f9;
+    justify-content: center;
+  }
+  .custom-file-label:hover {
+    background-color: #f0f0f0;
+  }
+  .checkbox-label {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    text-align: left;
+    font-size: 14px;
+    margin: 15px 0;
+  }
+
+  .submit-btn {
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 0;
+    font-weight: bold;
+    width:20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  } 
+
+  .submit-btn:hover {
+    background-color: #3f51b5;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .button{
+    width: 167px;
+    height: 52px;
+    margin: 0 auto;
+    background-color:#9CB3F6; 
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .label-icon {
+    width: 16px; /* adjust as needed */
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  .custom-select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    box-shadow: none;
+  }
+  .custom-select option{
+    font-weight: 600;
+  }
+  
+  .custom-select:focus {
+    outline: none;
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.1rem rgba(13,110,253,.25);
+  }
+  

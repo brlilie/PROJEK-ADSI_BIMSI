@@ -1,0 +1,114 @@
+.chat-container {
+  display: flex;
+  height: 100vh;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+
+  .sidebar {
+    width: 21%;
+    background: white;
+    border-right: 1px solid #ccc;
+  }
+
+  .sidebar .admin-contact {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+  }
+
+  .sidebar img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .chat-main {
+    width: 79%;
+    background: #d6e2ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .chat-header {
+    padding: 15px;
+    background: #98b3f1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .chat-header img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+  
+  .chat-box {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .message {
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    word-break: break-word;
+  }
+  
+  /* User's own message */
+  .my-message {
+    align-self: flex-end;
+    background-color: white;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* You can also prepare for admin message (optional) */
+  .admin-message {
+    align-self: flex-start;
+    background-color: #f1f1f1;
+  }
+  
+
+  .chat-footer {
+    padding: 10px;
+    background: white;
+  }
+
+  .chat-footer input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+
+  .chat-footer button {
+    display: none;
+  }
+
+  .timestamp {
+    font-size: 0.75rem; /* smaller text */
+    color: #888;
+    text-align: right;
+    margin-top: 4px;
+  }
+  
+
+  

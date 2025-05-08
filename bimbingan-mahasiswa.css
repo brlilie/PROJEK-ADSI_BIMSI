@@ -1,0 +1,171 @@
+.bimbingan-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 700px;
+    margin: 40px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+  .dropdown-toggle::after {
+    margin-left: 8px;
+  }
+  .btn-bimbingan {
+    background-color: #AFC4F9;
+    color: white;
+    border-radius: 12px;
+    padding: 10px 30px;
+  }
+  .btn-bimbingan:hover {
+    background-color: #90abf0;
+  }
+  
+  .link-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    display: none;
+  }
+  
+  .upload-box.show-input .link-input {
+    display: inline;
+  }
+  
+  .section-title {
+    font-weight: 600;
+  }
+  .bimbingan-label {
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+  }
+
+  .dropdown-toggle.dosen-btn {
+    background-color: #e9efff;
+    color: #000;
+    border: 1px solid #cdd8f0;
+    border-radius: 999px;
+    padding: 6px 18px;
+    font-weight: 500;
+  }
+  .dropdown-menu {
+    min-width: auto;
+  }
+
+  .dosen-pill {
+    background-color: #e9efff;
+    color: #000;
+    border: 1px solid #cdd8f0;
+    border-radius: 999px;
+    font-weight: 600;
+    padding: 6px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  
+  .dosen-pill i {
+    font-size: 18px;
+    margin-left: auto;
+  }
+
+  .rotate {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease;
+}
+
+.dropdown-underline {
+    border-bottom: 1px solid #999;
+    padding-bottom: 4px;
+  }
+  
+  .dropdown-btn-plain {
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dropdown-btn-plain:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .custom-progress-dropdown {
+    width: 220px; /* You can adjust this value */
+    border-bottom: 1px solid #999;
+    padding-bottom: 4px;
+  }
+
+  .bimbingan-btn {
+    border-radius: 999px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .bimbingan-btn.active {
+    border-color: #007bff;
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .bimbingan-title-container {
+    margin-top: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .upload-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #fff;
+  }
+  
+  .link-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #333;
+  }
+
+  .link-input::placeholder {
+    color: #999;
+  }
+
+  .button {
+    width: 167px;
+    height: 52px;
+    margin: 0 auto;
+    background-color:#9CB3F6; 
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover{
+    background-color: #365dcf;
+  }
+  .button:disabled {
+    background-color:#9CB3F6;
+    color: white;
+    cursor: not-allowed;
+  }

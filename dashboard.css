@@ -1,0 +1,98 @@
+.section-title {
+    color: #3b5bdb;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.news-card {
+    background-color: #ffffff;
+    padding: 20px 24px;
+    height: fit-content;
+    width: 80vw;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
+    max-width: 800px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .news-header {
+    margin-bottom: 10px;
+  }
+  
+  .news-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .news-desc {
+    font-size: 0.95rem;
+    margin: 0 0 10px;
+    color: #333;
+  }
+  
+  .news-footer {
+    font-size: 0.85rem;
+    color: #777;
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: #b6c8ff solid;
+    box-shadow: #7e7c7c;
+    border-radius: 20px;
+    width: fit-content;
+    height: 50vh;
+  }
+
+  .container2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.bimbingan-table {
+    border: 2px solid #3b82f6;
+    border-collapse: collapse;
+    background-color: #e8edff;
+    font-family: 'Kantumruy Pro', sans-serif;
+  }
+  
+  .bimbingan-table th,
+  .bimbingan-table td {
+    border: 1.5px solid #3b82f6;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  
+  .bimbingan-table th {
+    background-color: #cbdafe;
+    font-weight: 600;
+  }
+  .bimbingan-table tbody tr:hover {
+    background-color: #dbeafe;
+  }
+  .bimbingan-table tbody tr:hover {
+    background-color: #dbeafe;
+  }
+
+  
+
+  
+
